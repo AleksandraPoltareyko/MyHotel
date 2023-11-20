@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded12down"
+    android:layout_marginBottom="10dp"
+    android:backgroundTint="@color/white"
+    android:padding="16dp">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="none"
+        android:background="@drawable/for_edit_norm"
+        app:hintTextColor="#A9ABB7"
+        android:id="@+id/tourist_name_til"
+        android:layout_marginBottom="10dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="52sp"
+        android:hint="Имя"
+
+        android:textSize="16sp"
+
+        android:background = "@drawable/for_edit_norm"
+
+        android:id="@+id/tourist_name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="none"
+        android:background="@drawable/for_edit_norm"
+        app:hintTextColor="#A9ABB7"
+        android:id="@+id/tourist_lastname_til"
+        android:layout_marginBottom="10dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="52sp"
+        android:hint="Фамилия"
+
+        android:textSize="16sp"
+        android:background = "@drawable/for_edit_norm"
+        android:id="@+id/tourist_lastname"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="none"
+        android:background="@drawable/for_edit_norm"
+        app:hintTextColor="#A9ABB7"
+        android:id="@+id/tourist_birth_date_til"
+        android:layout_marginBottom="10dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="52sp"
+        android:hint="Дата рождения"
+
+        android:textSize="16sp"
+        android:background = "@drawable/for_edit_norm"
+        android:id="@+id/tourist_birth_date"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="none"
+        android:background="@drawable/for_edit_norm"
+        app:hintTextColor="#A9ABB7"
+        android:id="@+id/tourist_nationality_til"
+        android:layout_marginBottom="10dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="52sp"
+        android:hint="Гражданство"
+
+        android:textSize="16sp"
+        android:background = "@drawable/for_edit_norm"
+        android:id="@+id/tourist_nationality"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="none"
+        android:background="@drawable/for_edit_norm"
+        app:hintTextColor="#A9ABB7"
+        android:id="@+id/tourist_passport_til"
+        android:layout_marginBottom="10dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="52sp"
+        android:hint="Номер загранпаспорта"
+
+        android:textSize="16sp"
+        android:background = "@drawable/for_edit_norm"
+        android:id="@+id/tourist_passport"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="none"
+        android:background="@drawable/for_edit_norm"
+        app:hintTextColor="#A9ABB7"
+        android:id="@+id/tourist_passport_date_end_til"
+        android:layout_marginBottom="10dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="52sp"
+        android:hint="Срок действия загранпаспорта"
+        android:textSize="16sp"
+        android:background = "@drawable/for_edit_norm"
+        android:id="@+id/tourist_passport_date_end"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</LinearLayout>

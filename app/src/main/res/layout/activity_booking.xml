@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#F6F6F9">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FBF6F9">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/rounded"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded5"
+            android:backgroundTint="#20FFC700"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_baseline_star_24"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating_booking"
+                android:textSize="16dp"
+                android:textColor="@color/ratingcolor"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:id="@+id/name_booking"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/adress_booking"
+            android:autoLink="web"
+            android:textColor="#0D72FF"
+            android:textSize="14dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table_layout_booking"
+        android:padding="16dp"
+        android:background="@drawable/rounded12"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="10dp">
+
+    </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded12"
+            android:backgroundTint="@color/white"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Информация о покупателе"
+
+                android:textSize="22sp" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="#A9ABB7"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/for_edit_norm"
+                app:boxBackgroundMode="none">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Номер телефона"
+                    android:backgroundTint="#F6F6F9"
+                    android:background="@drawable/for_edit_norm"
+                    android:id="@+id/edit_phone"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="#A9ABB7"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/for_edit_norm"
+                app:boxBackgroundMode="none"
+                android:id="@+id/edit_email_til">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Почта"
+                    android:background="@drawable/for_edit_norm"
+                    android:id="@+id/edit_email"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#828796"
+                android:text="Эти данные никому не передаются. После оплаты мы вышли чек на указанный вами номер и почту"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:id="@+id/tourists">
+
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:id="@+id/tourist_add"
+            android:background="@drawable/rounded12"
+            android:backgroundTint="@color/white"
+            android:onClick="addTourist"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="Добавить туриста"
+                android:textColor="@color/black"
+                android:id="@+id/tourist_number"
+                android:layout_alignParentLeft="true"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icons_add"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/table_layout_booking_price"
+            android:padding="16dp"
+            android:background="@drawable/rounded12"
+            android:backgroundTint="@color/white"
+            android:layout_marginBottom="10dp"
+            >
+
+        </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:background="@color/white"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/button_is_payed"
+            android:backgroundTint="#0D72FF"
+            android:onClick="isPayed"
+
+            />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
